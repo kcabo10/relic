@@ -33,6 +33,9 @@ public class VuforiaOpImpl extends LinearOpMode {
     @Override
     public void runOpMode() throws InterruptedException {
 
+        //  GridNavigationImplimentation impl = new GridNavigationImplimentation();
+        //  impl.GridNav();
+
         DcMotor driveR = hardwareMap.dcMotor.get("driveR"); // change to ours, driveR = right drive
         driveR.setDirection(DcMotorSimple.Direction.REVERSE);
         driveR.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
