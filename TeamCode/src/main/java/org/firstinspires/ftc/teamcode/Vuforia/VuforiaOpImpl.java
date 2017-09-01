@@ -142,7 +142,7 @@ public class VuforiaOpImpl extends LinearOpMode {
         driveL.setPower(0);
         driveR.setPower(0);
 
-        // *** END navigation code  ** //
+        // *** END navigation code  *** //
 
 
 
