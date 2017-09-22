@@ -6,15 +6,15 @@ package org.firstinspires.ftc.teamcode.Gridnavigation;
 
 public class GridNavigationImplimentation {
 
-    double X1 = 4;
+    double X1 = 0;
     //X1 is starting X coordinate
     double X2 = 2;
     //X2 is X destination
-    double Y1 = 3;
+    double Y1 = 0;
     //Y1 is starting Y coordinate
     double Y2 = 4;
     //Y2 is Y destination
-    double StartingAngle = 45;
+    double StartingAngle = 0;
 
     public static void main(String args[]) {
 
@@ -45,11 +45,11 @@ public class GridNavigationImplimentation {
         System.out.println(theta);
         tanAngle = Math.toDegrees(theta);
         System.out.println(tanAngle);
-        System.out.println("Hypotenus is" + Hypotenus);
+        System.out.println("Hypotenus is " + Hypotenus);
         X1 = X2;
         Y1 = Y2;
         turnAngle = tanAngle - StartingAngle;
-        System.out.println("Turn angle" + turnAngle);
+        System.out.println("Turn angle " + turnAngle);
 
 
     }
