@@ -14,7 +14,7 @@ public class GridNavigationImplimentation {
     //Y1 is starting Y coordinate
     double Y2 = 4;
     //Y2 is Y destination
-    double StartingAngle = 0;
+    double StartingAngle = 90;
 
     public static void main(String args[]) {
 
@@ -42,19 +42,42 @@ public class GridNavigationImplimentation {
         //atan2 automatically corrects for the limited domain of the inverse tangent function
         System.out.println(L1);
         System.out.println(L2);
-        System.out.println(theta);
         tanAngle = Math.toDegrees(theta);
-        System.out.println(tanAngle);
+        System.out.println("tanAngle is " + tanAngle);
         System.out.println("Hypotenus is " + Hypotenus);
         X1 = X2;
+        System.out.println("X1 is " + X1);
         Y1 = Y2;
+        System.out.println("Y1 is " + Y1);
         turnAngle = tanAngle - StartingAngle;
         System.out.println("Turn angle " + turnAngle);
-
-
+        //if this doesn't work, comment out this entire if statement
+        if(((turnAngle < 0) && (tanAngle < 0)) && (tanAngle < turnAngle)) {
+            //StartingAngle = turnAngle - tanAngle;
+            StartingAngle = tanAngle - turnAngle;
+        }
+        else if(((turnAngle < 0) && (tanAngle < 0)) && (turnAngle < tanAngle)){
+            StartingAngle = turnAngle - tanAngle;
+        }
+        else if(((turnAngle > 0) && (tanAngle > 0)) && (turnAngle < tanAngle)){
+            StartingAngle = tanAngle - turnAngle;
+        }
+        else if(((turnAngle > 0) && (tanAngle > 0)) && (tanAngle < turnAngle)) {
+            StartingAngle = turnAngle - tanAngle;
+        }
+        else if(((turnAngle < 0) && (tanAngle > 0))) {
+            StartingAngle = tanAngle - turnAngle;
+        }
+        else if(((turnAngle > 0) && (tanAngle < 0))) {
+            StartingAngle = tanAngle - turnAngle;
+        }
+        else(){
+            StartingAngle = turnAngle;
+        }
+        }
     }
 
-}
+
           // Math.
 
 
