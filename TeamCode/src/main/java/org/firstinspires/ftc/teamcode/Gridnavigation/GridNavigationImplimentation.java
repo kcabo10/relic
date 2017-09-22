@@ -13,7 +13,7 @@ public class GridNavigationImplimentation {
     double Y1 = 0;
     //Y1 is starting Y coordinate
     double Y2 = 4;
-    //Y2 is Y destination
+    //Y2 is Y destination9
     double StartingAngle = 90;
 
     public static void main(String args[]) {
@@ -71,7 +71,7 @@ public class GridNavigationImplimentation {
         else if(((turnAngle > 0) && (tanAngle < 0))) {
             StartingAngle = tanAngle - turnAngle;
         }
-        else(){
+        else{
             StartingAngle = turnAngle;
         }
         }
