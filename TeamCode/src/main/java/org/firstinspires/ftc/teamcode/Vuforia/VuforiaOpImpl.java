@@ -185,8 +185,6 @@ public class VuforiaOpImpl extends LinearOpMode {
     }
 
     private static String getLicenseKey () {
-        // url: developer.vuforia.com
-        // user/pw: beeppatrol/Team96snore
         return LICENSE_KEY;
     }
 
